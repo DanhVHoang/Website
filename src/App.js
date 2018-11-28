@@ -3,21 +3,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './fonts.css';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello this is Danh  Hoang</h1>
-        </header>
-        <p className="App-intro">
-          To get started, consult alice lam at alicelam.co
-        </p>
-      </div>
-    );//end return 
-  }//end render
-}//end class App 
+				<Header/> 			
+				<div id="main">
+          {this.props.children}
+        </div>
+  </div>
+    );
+  }
+}
 
 export default App;
