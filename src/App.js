@@ -1,3 +1,5 @@
+//main page so far
+//imports
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -14,8 +16,8 @@ class App extends Component {
           To get started, consult alice lam at alicelam.co
         </p>
       </div>
-    );
-  }
-}
+    );//end return 
+  }//end render
+}//end class App 
 
 export default App;
